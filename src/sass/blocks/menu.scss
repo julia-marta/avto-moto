@@ -1,0 +1,29 @@
+.menu {
+  @include list-reset;
+  @include indents-none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu--header .menu__item  {
+  margin-right: 68px;
+}
+
+.menu--footer .menu__item {
+  margin-right: 66px;
+}
+
+.menu__item {
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.menu__link {
+  @include font-weight(600);
+  display: block;
+  padding: 5px 0;
+}

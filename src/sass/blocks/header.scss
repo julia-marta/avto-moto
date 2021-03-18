@@ -1,0 +1,21 @@
+.header {
+  padding-top: 15px;
+  padding-bottom: 14px;
+  background-color: $background;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__navigation {
+  margin-bottom: 2px;
+}
+
+.header__logo img {
+  display: block;
+  margin-left: 7px;
+}
