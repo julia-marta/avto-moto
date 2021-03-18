@@ -3,8 +3,12 @@
   @include indents-none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+
+  &--header {
+    justify-content: flex-end;
+  }
 }
 
 .menu--header .menu__item  {
@@ -12,10 +16,11 @@
 }
 
 .menu--footer .menu__item {
-  margin-right: 66px;
+  margin-right: 67px;
 }
 
 .menu__item {
+  margin-bottom: 2px;
 
   &:last-child {
     margin-right: 0;

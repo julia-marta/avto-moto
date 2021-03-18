@@ -12,10 +12,11 @@
 }
 
 .header__navigation {
-  margin-bottom: 2px;
+  flex-grow: 1;
+  margin-right: 4px;
 }
 
 .header__logo img {
   display: block;
-  margin-left: 7px;
+  margin-left: 4px;
 }
