@@ -9,14 +9,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  padding: 0 56px;
 }
 
 .header__navigation {
   flex-grow: 1;
-  margin-right: 4px;
 }
 
 .header__logo img {
   display: block;
-  margin-left: 4px;
 }

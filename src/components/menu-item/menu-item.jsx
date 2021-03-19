@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from "prop-types";
 
-const MenuItem = (props) => {
-    const {title} = props;
+const MenuItem = ({title}) => {
 
     return (
       <li className="menu__item">

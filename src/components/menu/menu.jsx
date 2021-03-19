@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from "prop-types";
 import MenuItem from "../menu-item/menu-item";
 
-const Menu = (props) => {
-  const {type, items} = props;
+const Menu = ({type, items}) => {
 
   return (
       <ul className={`${type}__menu menu menu--${type}`}>
