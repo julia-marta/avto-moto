@@ -9,7 +9,7 @@ export const IconType = {
       height: 13,
     },
     NEXT: {
-      name: `arrow-front`,
+      name: `arrow-next`,
       width: 20,
       height: 13,
     },

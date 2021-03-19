@@ -1,0 +1,11 @@
+.icon {
+  position: absolute;
+
+  &--arrow-back,
+  &--arrow-next {
+    top: 19px;
+    left: 15px;
+    pointer-events: none;
+  }
+
+}

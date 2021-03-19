@@ -1,9 +1,9 @@
 <svg width="0" height="0" class="hidden">
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 13" id="icon-arrow-back">
-    <path d="M1.004 6.172L6.918.369M1.004 6.172l5.689 5.797M1.004 6.172l18.977.18" stroke="#D7D9DF"></path>
+    <path d="M1.004 6.172L6.918.369M1.004 6.172l5.689 5.797M1.004 6.172l18.977.18" stroke="currentColor"></path>
   </symbol>
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 13" id="icon-arrow-front">
-    <path d="M18.987 6.172L13.075.369m5.912 5.803L13.3 11.969m5.687-5.797l-18.972.18" stroke="#48494D"></path>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 13" id="icon-arrow-next">
+    <path d="M18.987 6.172L13.075.369m5.912 5.803L13.3 11.969m5.687-5.797l-18.972.18" stroke="currentColor"></path>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 22" id="icon-gas">
     <rect x="1.746" y=".75" width="10.95" height="19.913" rx="1.25" stroke="#48494D" stroke-width="1.5"></rect>
