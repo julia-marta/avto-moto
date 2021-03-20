@@ -1,0 +1,33 @@
+.button {
+  @include font-weight(600);
+  box-sizing: border-box;
+  display: block;
+  width: 196px;
+  padding: 16px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.12em;
+  color: $main-background;
+  background-color: $button;
+
+  &--light {
+    width: 222px;
+    padding: 15px 0;
+    color: $button;
+    background-color: $main-background;
+    border: 1px solid $button;
+
+    &:hover,
+    &:focus {
+      background-color: $button;
+      color: $main-background;
+    }
+  }
+
+  &:hover:not(&--light),
+  &:focus:not(&--light) {
+    background-color: $button-hover;
+  }
+}

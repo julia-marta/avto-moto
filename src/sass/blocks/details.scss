@@ -1,3 +1,8 @@
+.details__wrapper {
+  padding-left: 3px;
+  margin-bottom: 37px;
+}
+
 .details__title {
   @include indents-none;
   @include font-weight(700);
@@ -70,4 +75,8 @@
     background-color: $main-text;
     transform: rotate(-5deg);
   }
+}
+
+.details__button {
+  margin-bottom: 16px;
 }
