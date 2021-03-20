@@ -1,5 +1,4 @@
 import React, {useState, useCallback} from 'react';
-import {connect} from "react-redux";
 import PropTypes from "prop-types";
 import SliderButton from "../slider-button/slider-button";
 
@@ -23,7 +22,7 @@ const Slider = ({slides}) => {
 
       <div className="slider__display">
         {slides.map((slide, index) => {
-          return  <picture key={index+1}>
+          return <picture key={index + 1}>
             <source type="image/webp" srcSet={`img/${slide}.webp 1x, img/${slide}@2x.webp 2x`} />
             <img className={`slider__picture ${index === current ? `slider__picture--active` : ``}`} src={`img/${slide}.jpg`} srcSet={`img/${slide}@2x.jpg 2x`} width="600" height="375" alt="Фото автомобиля" />
           </picture>
@@ -49,12 +48,7 @@ const Slider = ({slides}) => {
 };
 
 Slider.propTypes = {
-    slides: PropTypes.arrayOf(PropTypes.string).isRequired,
-  };
+  slides: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 
-const mapStateToProps = (store) => ({
-  slides: store.productData.photos,
-});
-
-export {Slider};
-export default connect(mapStateToProps)(Slider);
+export default Slider;

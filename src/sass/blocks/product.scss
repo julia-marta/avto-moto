@@ -4,8 +4,17 @@
 
 .product__wrapper {
   padding: 0 49px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .product__photos {
   width: 600px;
+  margin-right: 57px;
+}
+
+.product__info {
+  margin-top: -15px;
 }

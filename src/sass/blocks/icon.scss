@@ -1,11 +1,33 @@
 .icon {
   position: absolute;
+  top: 0;
+  left: 0;
 
   &--arrow-back,
   &--arrow-next {
     top: 19px;
     left: 15px;
     pointer-events: none;
+  }
+
+  &--gas {
+    top: 13px;
+    left: 24px;
+  }
+
+  &--manual {
+    top: 11px;
+    left: 25px;
+  }
+
+  &--horse {
+    top: 12px;
+    left: 19px;
+  }
+
+  &--motor {
+    top: 12px;
+    left: 20px;
   }
 
 }
