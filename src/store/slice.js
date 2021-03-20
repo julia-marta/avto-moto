@@ -1,9 +1,11 @@
 import {createSlice} from '@reduxjs/toolkit';
-import {mockCar} from "../mocks";
+import {mockCar, mockSpecification, mockReviews} from "../mocks";
 
 const initialState = {
-  productData: mockCar
-}
+  productData: mockCar,
+  specification: mockSpecification,
+  reviews: mockReviews
+};
 
 const autoMotoSlice = createSlice({
   name: 'autoMoto',

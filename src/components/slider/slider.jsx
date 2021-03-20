@@ -1,6 +1,9 @@
 import React, {useState, useCallback} from 'react';
 import PropTypes from "prop-types";
 import SliderButton from "../slider-button/slider-button";
+import {SliderControl} from "../../const";
+
+const {NEXT, BACK} = SliderControl;
 
 const Slider = ({slides}) => {
 
@@ -8,7 +11,7 @@ const Slider = ({slides}) => {
 
   const handleButtonClick = useCallback(
     (evt) => {
-      if (evt.target.id === `next`) {
+      if (evt.target.id === NEXT) {
         setCurrent(current + 1);
       } else {
         setCurrent(current - 1);
@@ -30,7 +33,7 @@ const Slider = ({slides}) => {
       </div>
 
       <div className="slider__navigation">
-        <SliderButton type={`back`} disabled={current === 0} onClick={handleButtonClick} />
+        <SliderButton type={BACK} disabled={current === 0} onClick={handleButtonClick} />
         <ul className="slider__preview-list">
           {slides.map((slide, index) => {
             return <li key={index + 1} className="slider__preview-item">
@@ -41,7 +44,7 @@ const Slider = ({slides}) => {
             </li>
           })}
         </ul>
-        <SliderButton type={`next`} disabled={current === slides.length - 1} onClick={handleButtonClick} />
+        <SliderButton type={NEXT} disabled={current === slides.length - 1} onClick={handleButtonClick} />
       </div>
     </div>
   );

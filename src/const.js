@@ -2,6 +2,17 @@ export const HEADER_MENU_ITEMS = [`Автомобили`, `Контакты`, `�
 
 export const FOOTER_MENU_ITEMS = [`Корпоративным клиентам`, `Клиентам`, `Аренда авто`, `Каршеринг`, `Как продать авто`, `Traid-in`, `Test draiv`];
 
+export const SliderControl = {
+  NEXT: `next`,
+  BACK: `back`
+}
+
+export const Tab = {
+  SPECIFICATION: `Характеристики`,
+  REVIEWS: `Отзывы`,
+  CONTACTS: `Контакты`
+};
+
 export const IconType = {
   BACK: {
     name: `arrow-back`,
