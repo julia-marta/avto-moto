@@ -2,6 +2,8 @@ export const HEADER_MENU_ITEMS = [`Автомобили`, `Контакты`, `�
 
 export const FOOTER_MENU_ITEMS = [`Корпоративным клиентам`, `Клиентам`, `Аренда авто`, `Каршеринг`, `Как продать авто`, `Traid-in`, `Test draiv`];
 
+export const STARS = [`1`, `2`, `3`, `4`, `5`];
+
 export const SliderControl = {
   NEXT: `next`,
   BACK: `back`
@@ -53,5 +55,10 @@ export const IconType = {
     name: `motor`,
     width: 30,
     height: 23,
+  },
+  STAR: {
+    name: `star`,
+    width: 17,
+    height: 16,
   }
 };
