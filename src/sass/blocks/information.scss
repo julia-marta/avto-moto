@@ -1,0 +1,36 @@
+.information {
+  padding-bottom: 140px;
+}
+
+.information__wrapper {
+  padding: 0 55px;
+}
+
+.information__nav-list {
+  @include indents-none;
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.information__nav-link {
+  box-sizing: border-box;
+  display: block;
+  width: 195px;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid $border;
+
+  &--active,
+  &:hover,
+  &:focus {
+    color: $main-background;
+    background-color: $button;
+    border-color: $button;
+    transition: all 0.6s;
+  }
+}

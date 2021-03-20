@@ -1,0 +1,24 @@
+.specification {
+  padding-top: 10px;
+}
+
+.specification__list {
+  @include indents-none;
+  @include list-reset;
+  max-width: 565px;
+}
+
+.specification__item {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 50px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid $border;
+}
+
+.specification__value {
+  @include indents-none;
+}

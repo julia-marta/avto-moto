@@ -13,6 +13,16 @@ export const Tab = {
   CONTACTS: `Контакты`
 };
 
+export const SpecificationAlias = {
+  TRANSMISSION: `Трансмиссия`,
+  POWER: `Мощность двигателя, л.с.`,
+  TYPE: `Тип двигателя`,
+  DRIVE: `Привод`,
+  VOLUME: `Объем двигателя, л`,
+  TORQUE: `Макс. крутящий момент`,
+  CYLINDERS: `Количество цилиндров`
+};
+
 export const IconType = {
   BACK: {
     name: `arrow-back`,

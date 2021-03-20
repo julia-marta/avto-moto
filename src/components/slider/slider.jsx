@@ -1,7 +1,7 @@
 import React, {useState, useCallback} from 'react';
-import PropTypes from "prop-types";
 import SliderButton from "../slider-button/slider-button";
 import {SliderControl} from "../../const";
+import slidesProp from "../../prop-types/slides.prop";
 
 const {NEXT, BACK} = SliderControl;
 
@@ -51,7 +51,7 @@ const Slider = ({slides}) => {
 };
 
 Slider.propTypes = {
-  slides: PropTypes.arrayOf(PropTypes.string).isRequired,
+  slides: slidesProp,
 };
 
 export default Slider;

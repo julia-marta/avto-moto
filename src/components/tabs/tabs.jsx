@@ -17,12 +17,12 @@ const Tabs = ({renderTab}) => {
 
   return (
     <Fragment>
-
         <ul className="information__nav-list">
           {Object.keys(Tab).map((tab, i) => (
-            <li key={i + 1} className={`information__nav-item ${tab === activeTab ? `information__nav-item--active` : ``}`}>
+            <li key={i + 1} className="information__nav-item">
               {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-              <a href="#" className="information__nav-link" onClick={handleTabClick}>{Tab[tab]}</a>
+              <a href="#" className={`information__nav-link ${Tab[tab] === activeTab ? `information__nav-link--active` : ``}`}
+              onClick={handleTabClick}>{Tab[tab]}</a>
             </li>
           ))}
         </ul>

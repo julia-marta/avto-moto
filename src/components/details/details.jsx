@@ -1,7 +1,7 @@
 import React from 'react';
-import PropTypes from "prop-types";
 import Feature from "../feature/feature";
 import Button from "../button/button";
+import detailsProp from "../../prop-types/details.prop";
 
 const Details = ({details}) => {
 
@@ -34,18 +34,7 @@ const Details = ({details}) => {
 };
 
 Details.propTypes = {
-  details: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    features: PropTypes.shape({
-      fuel: PropTypes.string.isRequired,
-      transmission: PropTypes.string.isRequired,
-      power: PropTypes.string.isRequired,
-      volume: PropTypes.string.isRequired,
-    }).isRequired,
-    price: PropTypes.number.isRequired,
-    oldPrice: PropTypes.number,
-    payment: PropTypes.number.isRequired,
-  })
+  details: detailsProp,
 };
 
 export default Details;

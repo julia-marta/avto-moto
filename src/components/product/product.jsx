@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import {connect} from "react-redux";
 import Slider from "../slider/slider";
 import Details from "../details/details";
+import detailsProp from "../../prop-types/details.prop";
+import slidesProp from "../../prop-types/slides.prop";
 
 const Product = ({product}) => {
 
@@ -23,19 +25,8 @@ const mapStateToProps = (store) => ({
 
 Product.propTypes = {
   product: PropTypes.shape({
-    details: PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      features: PropTypes.shape({
-        fuel: PropTypes.string.isRequired,
-        transmission: PropTypes.string.isRequired,
-        power: PropTypes.string.isRequired,
-        volume: PropTypes.string.isRequired,
-        }).isRequired,
-      price: PropTypes.number.isRequired,
-      oldPrice: PropTypes.number,
-      payment: PropTypes.number.isRequired,
-    }),
-    photos: PropTypes.arrayOf(PropTypes.string).isRequired,
+    details: detailsProp,
+    photos: slidesProp,
   })
 };
 
