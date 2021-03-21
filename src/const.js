@@ -4,10 +4,29 @@ export const FOOTER_MENU_ITEMS = [`Корпоративным клиентам`,
 
 export const STARS = [`1`, `2`, `3`, `4`, `5`];
 
+export const Contact = {
+  ADDRESS: {
+    title: `Адрес`,
+    value: `Санкт-Петербург, набережная реки Карповки, дом 5`
+  },
+  MODE: {
+    title: `Режим работы`,
+    value: `Ежедневно, с 10:00 до 21:00`
+  },
+  PHONE: {
+    title: `Телефон`,
+    value: `8 (800) 333-55-99`
+  },
+  EMAIL: {
+    title: `E-mail`,
+    value: `info@avto-moto.ru`
+  },
+};
+
 export const SliderControl = {
   NEXT: `next`,
   BACK: `back`
-}
+};
 
 export const Tab = {
   SPECIFICATION: `Характеристики`,
