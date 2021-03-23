@@ -16,7 +16,7 @@ const Review = ({data}) => {
 
     return (
       <li className="reviews__item review">
-        <p className="review__author">{data.name}</p>
+        <p className="review__author">{data.username}</p>
         <dl className="review__content-list">
           <dt className="review__title review__title--vantage review__title--plus">Достоинства</dt>
             <dd className="review__text review__text--vantage">{data.advantages ? data.advantages : `Не указано`}</dd>

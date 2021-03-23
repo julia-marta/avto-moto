@@ -1,7 +1,7 @@
 import {shape, string, number, instanceOf} from "prop-types";
 
 export default shape({
-    name: string.isRequired,
+    username: string.isRequired,
     advantages: string,
     disadvantages: string,
     comment: string.isRequired,

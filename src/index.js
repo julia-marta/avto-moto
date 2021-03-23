@@ -8,6 +8,10 @@ import './sass/style.scss';
 
 const store = configureStore({
   reducer: Reducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }),
 });
 
 ReactDOM.render(

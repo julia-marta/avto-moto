@@ -44,6 +44,24 @@ export const SpecificationAlias = {
   CYLINDERS: `Количество цилиндров`
 };
 
+export const FormRequiredInput = {
+  NAME: `username`,
+  COMMENT: `comment`
+};
+
+export const defaultReview = {
+  username: ``,
+  rating: ``,
+  advantages: ``,
+  disadvantages: ``,
+  comment: ``
+};
+
+export const defaultTouchedStatus = {
+  username: false,
+  comment: false,
+};
+
 export const IconType = {
   BACK: {
     name: `arrow-back`,
@@ -79,5 +97,11 @@ export const IconType = {
     name: `star`,
     width: 17,
     height: 16,
+  },
+
+  STAR_LARGE: {
+    name: `star`,
+    width: 27,
+    height: 25,
   }
 };
