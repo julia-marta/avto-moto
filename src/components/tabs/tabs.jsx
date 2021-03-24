@@ -2,11 +2,9 @@ import React, {Fragment, useState, useCallback} from "react";
 import PropTypes from "prop-types";
 import {Tab} from "../../const";
 
-const {SPECIFICATION} = Tab;
-
 const Tabs = ({renderTab}) => {
 
-  const [activeTab, setActiveTab] = useState(SPECIFICATION);
+  const [activeTab, setActiveTab] = useState(Tab.SPECIFICATION);
 
   const handleTabClick = useCallback(
       (evt) => {

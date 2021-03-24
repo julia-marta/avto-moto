@@ -4,6 +4,11 @@ export const FOOTER_MENU_ITEMS = [`Корпоративным клиентам`,
 
 export const STARS = [`1`, `2`, `3`, `4`, `5`];
 
+export const Key = {
+  ESC: `Esc`,
+  ESCAPE: `Escape`
+};
+
 export const Contact = {
   ADDRESS: {
     title: `Адрес`,
@@ -62,6 +67,11 @@ export const defaultTouchedStatus = {
   comment: false,
 };
 
+export const defaultAnimation = {
+  fadein: true,
+  shake: false,
+};
+
 export const IconType = {
   BACK: {
     name: `arrow-back`,
@@ -104,4 +114,20 @@ export const IconType = {
     width: 27,
     height: 25,
   }
+};
+
+export const MapParam = {
+  LATITUDE: `59.968`,
+  LONGITUDE: `30.320`,
+  WIDTH: 431,
+  HEIGHT: 271,
+  ZOOM: 15
+};
+
+export const PlacemarkParam = {
+  LATITUDE: `59.968137`,
+  LONGITUDE: `30.316263`,
+  WIDTH: 32,
+  HEIGHT: 40,
+  IMAGE: `img/pin.svg`
 };

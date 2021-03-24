@@ -1,12 +1,9 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import {YMaps, Map, Placemark} from 'react-yandex-maps';
-import {Contact} from "../../const";
+import {addLineBreak} from "../../utils";
+import {Contact, MapParam, PlacemarkParam} from "../../const";
 
 const TabContacts = () => {
-
-    const addLineBreak = (line, separator) => {
-      return <Fragment>{separator}<br/>{line.split(separator)[1]}</Fragment>
-    }
 
     return (
       <div className="information__tab contacts">
@@ -22,11 +19,12 @@ const TabContacts = () => {
         </ul>
         <YMaps>
           <div className="contacts__map">
-            <Map defaultState={{ center: [59.968, 30.320], zoom: 15 }} width={431} height={271} >
-              <Placemark geometry={[59.968137, 30.316263]} options={{
+            <Map defaultState={{ center: [MapParam.LATITUDE, MapParam.LONGITUDE], zoom: MapParam.ZOOM }}
+            width={MapParam.WIDTH} height={MapParam.HEIGHT} >
+              <Placemark geometry={[PlacemarkParam.LATITUDE, PlacemarkParam.LONGITUDE]} options={{
               iconLayout: `default#image`,
-              iconImageHref: `img/pin.svg`,
-              iconImageSize: [32, 40],
+              iconImageHref: PlacemarkParam.IMAGE,
+              iconImageSize: [PlacemarkParam.WIDTH, PlacemarkParam.HEIGHT],
               iconImageOffset: [-3, -40]
             }} />
             </Map>

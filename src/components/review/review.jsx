@@ -1,16 +1,8 @@
 import React from 'react';
-import moment from 'moment';
-import 'moment/locale/ru';
 import Icon from "../icon/icon";
 import {STARS, IconType} from "../../const";
 import reviewProp from "../../prop-types/review.prop";
-
-moment.updateLocale('ru', {
-    relativeTime: {
-         s:  "1 минуту",
-         m:  "1 минуту",
-   }
- });
+import {formatDate} from "../../utils";
 
 const Review = ({data}) => {
 
@@ -36,7 +28,7 @@ const Review = ({data}) => {
           <p className="review__recommendation">{data.rating > 2 ? `Советует` : `Не советует`}</p>
         </div>
         <div className="review__footer">
-          <time className="review__date" dateTime={data.date.toISOString()}>{moment(data.date).fromNow()}</time>
+          <time className="review__date" dateTime={data.date.toISOString()}>{formatDate(data.date)}</time>
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <a href="#" className="review__reply">Ответить</a>
         </div>

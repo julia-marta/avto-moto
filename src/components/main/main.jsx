@@ -2,14 +2,12 @@ import React, {useState, useEffect, useCallback} from 'react';
 import Product from "../product/product";
 import Information from "../information/information";
 import Modal from "../modal/modal";
+import {defaultAnimation, Key} from "../../const";
 
 const Main = () => {
 
   const [isModalActive, setModalActive] = useState(false);
-  const [modalAnimation, setAnimation] = useState({
-    fadein: true,
-    shake: false,
-  });
+  const [modalAnimation, setAnimation] = useState(defaultAnimation);
 
   useEffect(() => {
     if (isModalActive) {
@@ -32,8 +30,8 @@ const Main = () => {
     (evt) => {
       evt.preventDefault();
       setModalActive(false);
-      setAnimation({ ...modalAnimation, fadein: true });
-    }, [modalAnimation]
+      setAnimation(defaultAnimation);
+    }, []
   );
 
   const handleModalError = useCallback(
@@ -59,7 +57,7 @@ const Main = () => {
 
   const handleEscKeyDown = useCallback(
     (evt) => {
-      if (evt.key === `Escape` || evt.key === `Esc`) {
+      if (evt.key === Key.ESCAPE || evt.key === Key.ESC) {
         evt.preventDefault();
         setModalActive(false);
         setAnimation({ ...modalAnimation, fadein: true });
