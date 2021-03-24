@@ -19,9 +19,6 @@ const autoMotoSlice = createSlice({
       localStorage.setItem('review', JSON.stringify(action.payload));
       state.reviewData = action.payload;
     },
-    clearLogs(state) {
-      state.logs.length = 0;
-    },
     clearReviewData(state) {
       localStorage.removeItem('review');
       state.reviewData = defaultReview;

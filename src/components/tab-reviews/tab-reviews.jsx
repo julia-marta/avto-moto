@@ -4,7 +4,7 @@ import Review from "../review/review";
 import Button from "../button/button";
 import reviewProp from "../../prop-types/review.prop";
 
-const TabReviews = ({reviews}) => {
+const TabReviews = ({reviews, onButtonClick}) => {
 
     return (
       <div className="information__tab reviews">
@@ -13,13 +13,14 @@ const TabReviews = ({reviews}) => {
             <Review key={i + 1} data={review} />
           ))}
         </ul>
-        <Button title={`Оставить отзыв`} className={`reviews__button`} type={`light`} />
+        <Button title={`Оставить отзыв`} className={`reviews__button`} type={`light`} onClick={onButtonClick} />
       </div>
     )
 }
 
 TabReviews.propTypes = {
   reviews: PropTypes.arrayOf(reviewProp),
+  onButtonClick: PropTypes.func.isRequired,
 };
 
 export default TabReviews;

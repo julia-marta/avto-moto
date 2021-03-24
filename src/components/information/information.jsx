@@ -11,7 +11,7 @@ import reviewProp from "../../prop-types/review.prop";
 
 const {SPECIFICATION, REVIEWS, CONTACTS} = Tab;
 
-const Information = ({specification, reviews}) => {
+const Information = ({specification, reviews, onReviewButtonClick}) => {
 
   return (
     <section className="information">
@@ -22,7 +22,7 @@ const Information = ({specification, reviews}) => {
                 case SPECIFICATION:
                   return <TabSpecification data={specification}/>;
                 case REVIEWS:
-                  return <TabReviews reviews={reviews}/>;
+                  return <TabReviews reviews={reviews} onButtonClick={onReviewButtonClick}/>;
                 case CONTACTS:
                   return <TabContacts />;
                 default:
@@ -34,15 +34,16 @@ const Information = ({specification, reviews}) => {
   );
 };
 
+Information.propTypes = {
+  specification: specificationProp,
+  reviews: PropTypes.arrayOf(reviewProp),
+  onReviewButtonClick: PropTypes.func.isRequired,
+};
+
 const mapStateToProps = (store) => ({
   specification: store.specification,
   reviews: store.reviews,
 });
-
-Information.propTypes = {
-  specification: specificationProp,
-  reviews: PropTypes.arrayOf(reviewProp),
-};
 
 export {Information};
 export default connect(mapStateToProps)(Information);

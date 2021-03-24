@@ -8,7 +8,7 @@ import initRevewProp from "../../prop-types/init-review.prop";
 import {validateFields} from "../../utils";
 import {STARS, FormRequiredInput, IconType, defaultTouchedStatus} from "../../const";
 
-const Form = ({reviewData, saveFormData, clearFormData, saveReview}) => {
+const Form = ({reviewData, saveFormData, clearFormData, saveReview, onSubmitError, onSubmitSuccess}) => {
   const {NAME, COMMENT} = FormRequiredInput;
   const RATINGS = STARS.slice().reverse();
 
@@ -49,14 +49,16 @@ const Form = ({reviewData, saveFormData, clearFormData, saveReview}) => {
 
       if (errors.username || errors.comment) {
         setStatus({ ...isTouched, comment: true });
+        onSubmitError();
         return;
       }
 
       saveReview(reviewData);
       clearFormData();
       setStatus(defaultTouchedStatus);
+      onSubmitSuccess(evt);
 
-    }, [errors, reviewData, clearFormData, saveReview, isTouched]
+    }, [errors, isTouched, reviewData, clearFormData, saveReview, onSubmitError, onSubmitSuccess]
   );
 
   return (
@@ -113,6 +115,8 @@ Form.propTypes = {
   saveFormData: PropTypes.func.isRequired,
   clearFormData: PropTypes.func.isRequired,
   saveReview: PropTypes.func.isRequired,
+  onSubmitError: PropTypes.func.isRequired,
+  onSubmitSuccess: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = (store) => ({
