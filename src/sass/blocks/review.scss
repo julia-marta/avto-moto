@@ -110,4 +110,10 @@
 
 .review__reply {
   color: $button;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $button-hover
+  }
 }

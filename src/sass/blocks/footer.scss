@@ -7,7 +7,12 @@
   padding: 0 54px;
 }
 
-
 .footer__menu {
   margin-left: 4px;
+}
+
+@media (min-width:$min-content-width) and (max-width:$responsive-width) {
+  .footer__wrapper {
+    padding: 0 3.7%;
+  }
 }

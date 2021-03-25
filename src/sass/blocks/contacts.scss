@@ -1,15 +1,16 @@
 .contacts {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
+  max-width: 780px;
   padding-top: 30px;
 }
 
 .contacts__list {
   @include list-reset;
   @include indents-none;
-  margin-right: 103px;
+
 }
 
 .contacts__item {
@@ -31,7 +32,19 @@
 
   &--value {
     @include font-weight(600);
+    display: block;
     font-size: 14px;
     line-height: 19px;
+  }
+}
+
+@media (min-width:$min-content-width) and (max-width:$responsive-width) {
+
+  .contacts {
+    max-width: 100%;
+  }
+
+  .contacts__list {
+    width: 34%;
   }
 }

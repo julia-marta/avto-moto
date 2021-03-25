@@ -14,8 +14,15 @@
 
 .header__navigation {
   flex-grow: 1;
+  padding-top: 2px;
 }
 
 .header__logo img {
   display: block;
+}
+
+@media (min-width:$min-content-width) and (max-width:$responsive-width) {
+  .header__wrapper {
+    padding: 0 3.8%;
+  }
 }

@@ -3,7 +3,7 @@
   @include indents-none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 
   &--header {
@@ -20,10 +20,15 @@
 }
 
 .menu__item {
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
   }
 }
 
@@ -32,3 +37,20 @@
   display: block;
   padding: 5px 0;
 }
+
+@media (min-width:$min-content-width) and (max-width:$responsive-width) {
+  .menu--header .menu__item  {
+    margin-right: 6.7%;
+  }
+
+  .menu--footer .menu__item {
+    margin-right: 5.7%;
+  }
+
+  .menu__item {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+

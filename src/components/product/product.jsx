@@ -12,8 +12,10 @@ const Product = ({product}) => {
     <section className="product">
       <h2 className="visually-hidden">Полное описание автомобиля</h2>
         <div className="product__wrapper container">
+          <div className="product__content">
           <Slider slides={product.photos} />
           <Details details={product.details} />
+          </div>
       </div>
     </section>
   );

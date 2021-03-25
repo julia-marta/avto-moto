@@ -1,4 +1,3 @@
-import React, { Fragment } from 'react';
 import moment from 'moment';
 import 'moment/locale/ru';
 
@@ -10,10 +9,6 @@ moment.updateLocale('ru', {
 });
 
 export const RUB_SYMBOL = String.fromCharCode(0x20BD);
-
-export const addLineBreak = (line, separator) => {
-  return <Fragment>{separator}<br/>{line.split(separator)[1]}</Fragment>
-}
 
 export const formatSum = (sum) => {
   return new Intl.NumberFormat('ru-RU').format(sum);

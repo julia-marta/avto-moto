@@ -12,7 +12,10 @@ export const Key = {
 export const Contact = {
   ADDRESS: {
     title: `Адрес`,
-    value: `Санкт-Петербург, набережная реки Карповки, дом 5`
+    value: {
+      town: `Санкт-Петербург`,
+      street: `набережная реки Карповки, дом 5`
+    }
   },
   MODE: {
     title: `Режим работы`,

@@ -1,6 +1,6 @@
 import React from 'react';
+import ContactsItem from "../contacts-item/contacts-item";
 import {YMaps, Map, Placemark} from 'react-yandex-maps';
-import {addLineBreak} from "../../utils";
 import {Contact, MapParam, PlacemarkParam} from "../../const";
 
 const TabContacts = () => {
@@ -9,12 +9,7 @@ const TabContacts = () => {
       <div className="information__tab contacts">
         <ul className="contacts__list">
           {Object.keys(Contact).map((item, i) => (
-            <li key={i + 1} className="contacts__item">
-              <p className="contacts__text contacts__text--title">{Contact[item].title}</p>
-              <p className="contacts__text contacts__text--value">
-                {item === `ADDRESS` ? addLineBreak(Contact[item].value, `Санкт-Петербург,`) : Contact[item].value}
-              </p>
-            </li>
+            <ContactsItem key={i + 1} title={Contact[item].title} value={Contact[item].value} />
           ))}
         </ul>
         <YMaps>
