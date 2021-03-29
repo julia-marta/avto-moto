@@ -3,7 +3,7 @@
 }
 
 .product__wrapper {
-  padding: 0 3.4%;
+  padding: 0 49px;
 }
 
 .product__content {
@@ -21,6 +21,12 @@
 
 .product__info {
   padding-top: 25px;
+}
+
+@media (max-width:$desktop-width) {
+  .product__wrapper {
+    padding: 0 3.4%;
+  }
 }
 
 @media (min-width:$min-content-width) and (max-width:$responsive-width) {

@@ -9,7 +9,7 @@ const Header = () => {
       <div className="header__wrapper container">
         <div className="header__logo">
           {/* eslint-disable-next-line */}
-          <a><img src="img/logo.svg" width="134" height="55" alt="Логотип Авто Мото"/></a>
+          <a href="#"><img src="img/logo.svg" width="134" height="55" alt="Логотип Авто Мото"/></a>
         </div>
         <nav className="header__navigation">
           <Menu type={`header`} items={HEADER_MENU_ITEMS} />

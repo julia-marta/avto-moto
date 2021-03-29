@@ -95,6 +95,11 @@
   &:last-child {
     margin-left: 0;
   }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
 
 .form__star:hover,
