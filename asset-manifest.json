@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/auto-moto/static/css/main.33320082.chunk.css",
-    "main.js": "/auto-moto/static/js/main.29d274b2.chunk.js",
-    "main.js.map": "/auto-moto/static/js/main.29d274b2.chunk.js.map",
-    "runtime-main.js": "/auto-moto/static/js/runtime-main.1ffbdd10.js",
-    "runtime-main.js.map": "/auto-moto/static/js/runtime-main.1ffbdd10.js.map",
-    "static/js/2.8af4444b.chunk.js": "/auto-moto/static/js/2.8af4444b.chunk.js",
-    "static/js/2.8af4444b.chunk.js.map": "/auto-moto/static/js/2.8af4444b.chunk.js.map",
-    "index.html": "/auto-moto/index.html",
-    "static/css/main.33320082.chunk.css.map": "/auto-moto/static/css/main.33320082.chunk.css.map",
-    "static/js/2.8af4444b.chunk.js.LICENSE.txt": "/auto-moto/static/js/2.8af4444b.chunk.js.LICENSE.txt",
-    "static/media/style.scss": "/auto-moto/static/media/open-sans-regular.woff2"
+    "main.css": "/avto-moto/static/css/main.1f9b2763.chunk.css",
+    "main.js": "/avto-moto/static/js/main.29d274b2.chunk.js",
+    "main.js.map": "/avto-moto/static/js/main.29d274b2.chunk.js.map",
+    "runtime-main.js": "/avto-moto/static/js/runtime-main.bb9a74b7.js",
+    "runtime-main.js.map": "/avto-moto/static/js/runtime-main.bb9a74b7.js.map",
+    "static/js/2.8af4444b.chunk.js": "/avto-moto/static/js/2.8af4444b.chunk.js",
+    "static/js/2.8af4444b.chunk.js.map": "/avto-moto/static/js/2.8af4444b.chunk.js.map",
+    "index.html": "/avto-moto/index.html",
+    "static/css/main.1f9b2763.chunk.css.map": "/avto-moto/static/css/main.1f9b2763.chunk.css.map",
+    "static/js/2.8af4444b.chunk.js.LICENSE.txt": "/avto-moto/static/js/2.8af4444b.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/avto-moto/static/media/open-sans-regular.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.1ffbdd10.js",
+    "static/js/runtime-main.bb9a74b7.js",
     "static/js/2.8af4444b.chunk.js",
-    "static/css/main.33320082.chunk.css",
+    "static/css/main.1f9b2763.chunk.css",
     "static/js/main.29d274b2.chunk.js"
   ]
 }
