@@ -1,6 +1,8 @@
 # Avto-Moto
 
-Проект выполняется в Акселераторе HTML Academy.
+:rocket: Проект выполнен в Акселераторе HTML Academy.
+
+Для реализации карты использовано API [React Yandex Maps](https://www.npmjs.com/package/react-yandex-maps)
 ___
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

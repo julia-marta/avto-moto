@@ -1,4 +1,5 @@
 {
+  "homepage": "https://julia-marta.github.io/auto-moto",
   "name": "avto-moto",
   "version": "0.1.0",
   "private": true,
@@ -78,6 +79,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
@@ -152,5 +155,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "3.1.0"
   }
 }
