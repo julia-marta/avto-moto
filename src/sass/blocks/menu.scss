@@ -6,51 +6,90 @@
   justify-content: center;
   align-items: center;
 
+  &__item {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+  }
+
+  &__link {
+    @include font-weight(600);
+    display: block;
+    padding: 5px 0;
+  }
+
   &--header {
     justify-content: flex-end;
   }
-}
 
-.menu--header .menu__item  {
-  margin-right: 69px;
-}
-
-.menu--footer .menu__item {
-  margin-right: 67px;
-}
-
-.menu__item {
-  margin-bottom: 3px;
-
-  &:last-child {
-    margin-right: 0;
+  &--header .menu__item  {
+    margin-right: 69px;
   }
 
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-  }
-}
+  &--footer .menu__item {
+    margin-right: 67px;
 
-.menu__link {
-  @include font-weight(600);
-  display: block;
-  padding: 5px 0;
-}
-
-@media (min-width:$min-content-width) and (max-width:$responsive-width) {
-  .menu--header .menu__item  {
-    margin-right: 6.7%;
-  }
-
-  .menu--footer .menu__item {
-    margin-right: 5.7%;
-  }
-
-  .menu__item {
     &:last-child {
       margin-right: 0;
     }
   }
 }
 
+
+@media (max-width:$max-tablet-width) {
+
+  .menu {
+    &--header {
+      box-sizing: border-box;
+      position: fixed;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: 100%;
+      max-height: calc(100vh - 75px);
+      padding: 10px 2.8%;
+      background-color: $background;
+      overflow: hidden auto;
+      z-index: 20;
+    }
+
+    &--header .menu__item  {
+      width: 100%;
+      margin-right: 0;
+      border-top: 1px solid $border;
+
+      &:last-child {
+        border-bottom: 1px solid $border;
+      }
+    }
+
+    &--header .menu__link  {
+      padding-top: 21.5px;
+      padding-bottom: 19.5px;
+      padding-left: 15px;
+    }
+
+    &--footer {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: auto;
+      column-gap: 16.5%;
+      row-gap: 10px;
+      justify-content: flex-start;
+    }
+
+    &--footer .menu__item {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import Icon from "../icon/icon";
-import {STARS, IconType} from "../../const";
 import reviewProp from "../../prop-types/review.prop";
+import {STARS, IconType} from "../../const";
 import {formatDate} from "../../utils";
 
 const Review = ({data}) => {

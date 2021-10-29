@@ -11,7 +11,7 @@ export const mockCar = {
     oldPrice: 2400000,
     payment: 11000
   },
-  photos: [`desktop_slide_1`, `desktop_slide_2`, `desktop_slide_3`]
+  photos: [`slide_1`, `slide_2`, `slide_3`]
 };
 
 export const mockSpecification = {

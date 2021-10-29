@@ -1,5 +1,4 @@
 {
-  "homepage": "https://julia-marta.github.io/avto-moto",
   "name": "avto-moto",
   "version": "0.1.0",
   "private": true,
@@ -61,6 +60,7 @@
     "react-dom": "^17.0.1",
     "react-redux": "7.2.2",
     "react-refresh": "^0.8.3",
+    "react-responsive": "8.2.0",
     "react-yandex-maps": "4.6.0",
     "resolve": "1.18.1",
     "resolve-url-loader": "^3.1.2",
@@ -81,7 +81,8 @@
     "build": "node scripts/build.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "webp": "node scripts/webp.js"
   },
   "eslintConfig": {
     "extends": [

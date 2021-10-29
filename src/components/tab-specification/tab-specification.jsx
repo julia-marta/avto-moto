@@ -9,8 +9,8 @@ const TabSpecification = ({data}) => {
         <ul className="specification__list">
           {Object.keys(SpecificationAlias).map((alias, i) => (
             <li key={i + 1} className="specification__item">
-              <p className="specification__value">{SpecificationAlias[alias]}</p>
-              <p className="specification__value">{data[alias.toLowerCase()]}</p>
+              <p className="specification__text">{SpecificationAlias[alias]}</p>
+              <p className="specification__text specification__text--value">{data[alias.toLowerCase()]}</p>
             </li>
           ))}
         </ul>

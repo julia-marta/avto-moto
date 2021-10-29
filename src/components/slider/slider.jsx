@@ -25,9 +25,9 @@ const Slider = ({slides}) => {
 
       <div className="slider__display">
         {slides.map((slide, index) => {
-          return <picture key={index + 1}>
+          return <picture className={`slider__picture ${index === current ? `slider__picture--active` : ``}`} key={index + 1}>
             <source type="image/webp" srcSet={`img/${slide}.webp 1x, img/${slide}@2x.webp 2x`} />
-            <img className={`slider__picture ${index === current ? `slider__picture--active` : ``}`} src={`img/${slide}.jpg`} srcSet={`img/${slide}@2x.jpg 2x`} width="600" height="375" alt="Фото автомобиля" />
+            <img src={`img/${slide}.jpg`} srcSet={`img/${slide}@2x.jpg 2x`} width="600" height="375" alt="Фото автомобиля" />
           </picture>
         })}
       </div>
@@ -37,9 +37,9 @@ const Slider = ({slides}) => {
         <ul className="slider__preview-list">
           {slides.map((slide, index) => {
             return <li key={index + 1} className="slider__preview-item">
-              <picture>
+              <picture className="slider__preview">
                <source type="image/webp" srcSet={`img/${slide}.webp 1x, img/${slide}@2x.webp 2x`} />
-               <img className="slider__preview" src={`img/${slide}.jpg`} srcSet={`img/${slide}@2x.jpg 2x`} width="128" height="80" alt="Превью фото" />
+               <img src={`img/${slide}.jpg`} srcSet={`img/${slide}@2x.jpg 2x`} width="128" height="80" alt="Превью фото" />
               </picture>
             </li>
           })}

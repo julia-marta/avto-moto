@@ -1,8 +1,8 @@
 body {
   @include indents-none;
-  font-family: "Open Sans", "Arial", sans-serif;
+  @include font-weight;
+  font-family: $open-sans;
   font-size: 16px;
-  font-weight: 400;
   line-height: 22px;
   color: $main-text;
   background-color: $main-background;

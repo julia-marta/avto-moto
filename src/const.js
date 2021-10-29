@@ -4,6 +4,8 @@ export const FOOTER_MENU_ITEMS = [`Корпоративным клиентам`,
 
 export const STARS = [`1`, `2`, `3`, `4`, `5`];
 
+export const TABLET_VIEWPORT = 1023;
+
 export const Key = {
   ESC: `Esc`,
   ESCAPE: `Escape`
@@ -122,8 +124,8 @@ export const IconType = {
 export const MapParam = {
   LATITUDE: `59.968`,
   LONGITUDE: `30.320`,
-  WIDTH: 431,
-  HEIGHT: 271,
+  WIDTH: `100%`,
+  HEIGHT: `100%`,
   ZOOM: 15
 };
 

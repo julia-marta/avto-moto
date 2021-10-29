@@ -1,5 +1,11 @@
 .container {
   box-sizing: border-box;
-  max-width: $desktop-width;
+  max-width: $max-content-width;
   margin: 0 auto;
+}
+
+@media (max-width: $max-tablet-width) {
+  .container {
+    max-width: $max-tablet-width;
+  }
 }

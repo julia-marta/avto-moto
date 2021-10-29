@@ -1,3 +1,19 @@
+// viewport
+
+$mobile-width: 320px;
+$max-mobile-width: 767px;
+$tablet-width: 768px;
+$max-tablet-width: 1023px;
+$desktop-width: 1024px;
+$max-content-width: 1280px;
+
+// fonts
+
+$open-sans: "Open Sans", "Arial", sans-serif;
+$proxima: "Proxima Nova", "Arial", sans-serif;
+
+// colors
+
 $main-background: #FFFFFF;
 $main-text: #48494D;
 $background: #F5F5F9;
@@ -7,7 +23,3 @@ $border: #D7D9DF;
 $star: #BDBEC2;
 $error: #FF0000;
 $cross: #9F9E9E;
-
-$desktop-width: 1280px;
-$responsive-width: 1024px;
-$min-content-width: 769px;

@@ -1,18 +1,24 @@
 .footer {
   padding: 25px 0;
   background-color: $background;
+
+  &__wrapper {
+    padding: 0 54px;
+  }
+
+  &__menu {
+    margin-left: 4px;
+  }
 }
 
-.footer__wrapper {
-  padding: 0 54px;
-}
+@media (max-width:$max-tablet-width) {
+  .footer {
+    &__wrapper {
+      padding: 0 2.75%;
+    }
 
-.footer__menu {
-  margin-left: 4px;
-}
-
-@media (min-width:$min-content-width) and (max-width:$responsive-width) {
-  .footer__wrapper {
-    padding: 0 3.7%;
+    &__menu {
+      margin-left: 0;
+    }
   }
 }

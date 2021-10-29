@@ -23,8 +23,10 @@ const Details = ({details}) => {
           <p className="details__old-sum">{`${oldPrice.charAt(0)} ${oldPrice.substr(1)}`} {RUB_SYMBOL}</p>
          </div>
       </div>
-      <Button title={`Оставить заявку`} className={`details__button`} />
-      <Button title={`В кредит от ${creditPayment} ${RUB_SYMBOL}`} className={`details__button`} type={`light`} />
+      <div className="details__buttons">
+        <Button title={`Оставить заявку`} className={`details__button`} />
+        <Button title={`В кредит от ${creditPayment} ${RUB_SYMBOL}`} className={`details__button`} type={`light`} />
+      </div>
     </div>
   );
 };

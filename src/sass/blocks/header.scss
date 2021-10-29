@@ -2,31 +2,105 @@
   padding-top: 15px;
   padding-bottom: 14px;
   background-color: $background;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 56px;
+  }
+
+  &__navigation {
+    flex-grow: 1;
+    padding-top: 2px;
+  }
+
+  &__logo {
+    margin-right: 20px;
+
+    img {
+      display: block;
+    }
+  }
 }
 
-.header__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 56px;
-}
+@media (max-width:$max-tablet-width) {
 
-.header__navigation {
-  flex-grow: 1;
-  padding-top: 2px;
-}
+  .header {
+    padding-top: 10px;
+    padding-bottom: 0;
 
-.header__logo {
-  margin-right: 20px;
-}
+    &__wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 2.75%;
+    }
 
-.header__logo img {
-  display: block;
-}
+    &__top {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding-bottom: 10px;
+    }
 
-@media (min-width:$min-content-width) and (max-width:$responsive-width) {
-  .header__wrapper {
-    padding: 0 3.8%;
+    &__logo {
+      margin: 0;
+    }
+
+    &__navigation {
+      position: relative;
+      padding: 0;
+
+      &--closed .header__menu {
+        display: none;
+      }
+    }
+
+    &__toggle {
+      @include indents-none;
+      box-sizing: border-box;
+      position: relative;
+      width: 29px;
+      height: 16px;
+      border: none;
+      background: none;
+      cursor: pointer;
+
+      &::before,
+      &--close::after {
+        content: "";
+        position: absolute;
+        width: 29px;
+        height: 2px;
+        left: 0;
+        background-color: $main-text;
+        transition: all 0.3s;
+      }
+
+      &--hamburger {
+        &::before {
+          top: -2px;
+          box-shadow: 0 8px 0 0 $main-text, 0 16px 0 0 $main-text;
+        }
+      }
+
+      &--close {
+        &::before,
+        &::after {
+          top: 5px;
+        }
+
+        &::before {
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
+    }
   }
 }
