@@ -6,6 +6,8 @@ export const STARS = [`1`, `2`, `3`, `4`, `5`];
 
 export const TABLET_VIEWPORT = 1023;
 
+export const TAB_OVERFLOWING_VIEWPORT = 650;
+
 export const Key = {
   ESC: `Esc`,
   ESCAPE: `Escape`
@@ -50,7 +52,7 @@ export const SpecificationAlias = {
   TYPE: `Тип двигателя`,
   DRIVE: `Привод`,
   VOLUME: `Объем двигателя, л`,
-  TORQUE: `Макс. крутящий момент`,
+  TORQUE: `Макс. крутящий момент, Нм / об/мин`,
   CYLINDERS: `Количество цилиндров`
 };
 

@@ -52,6 +52,7 @@
       left: 0;
       right: 0;
       flex-direction: column;
+      flex-wrap: nowrap;
       justify-content: flex-start;
       align-items: flex-start;
       height: 100%;
@@ -90,6 +91,19 @@
     &--footer .menu__item {
       margin-right: 0;
       margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width:$max-mobile-width) {
+
+  .menu {
+    &--footer {
+      grid-template-columns: auto;
+      column-gap: 0;
+      row-gap: 5px;
+      justify-content: center;
+      text-align: center;
     }
   }
 }

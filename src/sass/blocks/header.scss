@@ -104,3 +104,16 @@
     }
   }
 }
+
+@media (max-width:$max-mobile-width) {
+  .header {
+
+    &__wrapper {
+      padding: 0 2.9%;
+    }
+
+    &__toggle {
+      margin-right: 13px;
+    }
+  }
+}

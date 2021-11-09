@@ -20,10 +20,22 @@ const Slider = ({slides}) => {
     }, [current]
   );
 
+  const handleTouchStart = useCallback(
+    () => {
+      switch (current) {
+        case slides.length - 1:
+          setCurrent(0);
+        break;
+        default:
+          setCurrent(current + 1);
+      }
+    }, [current, slides]
+  );
+
   return (
     <div className="product__photos slider">
 
-      <div className="slider__display">
+      <div className="slider__display" onTouchStart={handleTouchStart}>
         {slides.map((slide, index) => {
           return <picture className={`slider__picture ${index === current ? `slider__picture--active` : ``}`} key={index + 1}>
             <source type="image/webp" srcSet={`img/${slide}.webp 1x, img/${slide}@2x.webp 2x`} />

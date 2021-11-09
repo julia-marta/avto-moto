@@ -60,3 +60,39 @@
     }
   }
 }
+
+@media (max-width:$max-mobile-width) {
+
+  .contacts {
+    max-width: auto;
+    padding-top: 25px;
+
+    &__item {
+      margin-bottom: 20px;
+
+      &:nth-child(2),
+      &:last-child {
+        display: none;
+      }
+
+      &:first-child {
+        margin-bottom: 15px;
+      }
+
+      &:first-child .contacts__text--title {
+        margin-bottom: 11px;
+      }
+    }
+
+    &__text {
+      &--title {
+        margin-bottom: 11px;
+      }
+    }
+
+    &__map {
+      width: 100%;
+      height: 288px;
+    }
+  }
+}

@@ -42,3 +42,14 @@
     }
   }
 }
+
+@media (max-width: $max-mobile-width) {
+
+  .reviews {
+    padding-top: 20px;
+
+    &__button {
+      margin: 0 auto;
+    }
+  }
+}

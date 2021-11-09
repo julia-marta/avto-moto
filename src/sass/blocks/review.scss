@@ -147,3 +147,19 @@
     }
   }
 }
+
+@media (max-width: $max-mobile-width) {
+  .review {
+
+
+    &__author {
+      line-height: 20.5px;
+    }
+
+    &__text {
+      margin-bottom: 21.5px;
+      line-height: 20.5px;
+
+    }
+  }
+}

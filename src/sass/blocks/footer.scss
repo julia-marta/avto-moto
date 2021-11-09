@@ -22,3 +22,9 @@
     }
   }
 }
+
+@media (max-width:$max-mobile-width) {
+  .footer {
+    padding-top: 20px;
+  }
+}

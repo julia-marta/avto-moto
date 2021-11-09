@@ -10,7 +10,7 @@
     @include indents-none;
     @include list-reset;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-start;
   }
@@ -44,6 +44,28 @@
 
     &__wrapper {
       padding: 0 2.75%;
+    }
+  }
+}
+
+@media (max-width:$max-mobile-width) {
+
+  .information {
+    padding-top: 20px;
+    padding-bottom: 28px;
+
+    &__wrapper {
+      padding: 0 4.9%;
+    }
+
+    &__nav {
+      position: relative;
+      min-height: 50px;
+      overflow: hidden;
+    }
+
+    &__nav-list {
+      position: absolute;
     }
   }
 }

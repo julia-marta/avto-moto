@@ -1,5 +1,6 @@
 .specification {
   padding-top: 10px;
+  line-height: 19px;
 
   &__list {
     @include indents-none;
@@ -12,9 +13,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-end;
-    min-height: 50px;
-    padding-bottom: 8px;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 10px;
     border-bottom: 1px solid $border;
   }
 
@@ -34,13 +35,29 @@
     }
 
     &__item {
-      min-height: 55px;
+      padding-top: 25px;
     }
 
     &__text {
       &--value {
         @include font-weight(600);
       }
+    }
+  }
+}
+
+@media (max-width:$max-mobile-width) {
+  .specification {
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+
+    &__item {
+      padding-bottom: 11px;
+    }
+
+    &__text {
+      max-width: 144px;
     }
   }
 }

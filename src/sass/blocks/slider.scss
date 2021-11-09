@@ -127,3 +127,16 @@
     }
   }
 }
+
+@media (max-width:$max-mobile-width) {
+  .slider {
+
+    &__display {
+      margin-bottom: 0;
+    }
+
+    &__navigation {
+      display: none;
+    }
+  }
+}

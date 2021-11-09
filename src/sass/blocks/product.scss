@@ -43,8 +43,21 @@
     }
 
     &__info {
-      margin-left: 0;
       padding-top: 60px;
+    }
+  }
+}
+
+@media (max-width:$max-mobile-width) {
+  .product {
+    padding: 20px 0;
+
+    &__wrapper {
+      padding: 0 4.9%;
+    }
+
+    &__info {
+      padding-top: 20px;
     }
   }
 }
